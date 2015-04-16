@@ -1,0 +1,1 @@
+function frame(){$(".frame").each(function(){var e=$(this),i=e.parent().width();e.css({width:i+"px",height:parseInt(i)/16*9+"px"})})}$(function(){frame()});var resizeTimeout;$(window).resize(function(){clearTimeout(resizeTimeout),resizeTimeout=setTimeout(frame(),500)});
